@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Top Movies of All Time </title>
+
+    <link rel="stylesheet" type="text/css" href="movieStyles.css"/>
+
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* Style the header */
+    .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 95px;
+        text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <center>
+      <h1> Top Movies of All Time </h1>
+      <img id="popcorn" src="popcorn.jpg"/>
+    </center>
+
+    <div class="topnav">
+      <a href="movie.html">Adventure</a>
+      <a href="#">Action</a>
+      <a href="#">Comedy</a>
+      <a href="#">Drama</a>
+      <a href="#">Romance</a>
+    </div>
+
+    <div>
+    <h3>Welcome:</h3>
+      <p> This website lists the top 10 movies of every genre you can think of. We provide you a detailed summary of the movie, while avoiding spoilers. Additionally, you will be given info about the corresponding actors! Below, you can find the location of various theaters in Los Angleles.  </P>
+    </div>
+
+  <center>
+    <h2>Locations of Theaters:</h2>
+  </center>
+
+    <div class="row">
+      <div class="column">
+        <center>
+          <h2>The Vista Theatre</h2>
+        </center>
+        <center>
+          <div>
+            <img src="vista.jpg"
+          </div>
+        </center>
+        <p>Vista Theatre is a historic single-screen movie theater in Los Angeles, California, located in Los Feliz on the border with East Hollywood.</p>
+        <div>
+        Address: 4473 Sunset Dr, Los Angeles, CA 90027
+        </div>
+        <div>
+        Opened: October 9, 1923
+        </div>
+        <div>
+        Capacity: 400
+        </div>
+        <div>
+        Phone: (323) 660-6639
+      </div>
+
+      </div>
+      <div class="column">
+        <center>
+        <h2>Pacific Theatres at the Grove</h2>
+        </center>
+        <center>
+          <div>
+            <img src="grove.jpg"
+          </div>
+        </center>
+        <p>Multiscreen theater featuring plush, stadium-style seating & standard concessions like popcorn.</p>
+        <div>
+        Located in: The Grove
+        </div>
+        <div>
+        Address: 189 The Grove Dr, Los Angeles, CA 90036
+        </div>
+        <div>
+        Phone: (323) 692-0103
+        </div>
+      </div>
+
+      <div class="column">
+        <center>
+        <h2>ArcLight Hollywood</h2>
+        </center>
+        <center>
+          <div>
+            <img src="arclight.jpg"
+          </div>
+        </center>
+        <p>The ArcLight Hollywood is a 15-screen multiplex located at 6360 Sunset Boulevard in Hollywood, California. All 15 screens feature stadium seating, and carry a THX certification for optimal sound and picture presentation.</p>
+        <div>
+        Located in: The Dome Entertainment Centre
+        </div>
+        <div>
+        Address: 6360 Sunset Blvd, Los Angeles, CA 90028
+        </div>
+        <div>
+        Opened: 2002
+        </div>
+        <div>
+        Owner: The Decurion Corporation
+        </div>
+        <div>
+        Phone: (323) 615-2550
+      </div>
+    </div>
+
+  </body>
+</html>
